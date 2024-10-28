@@ -14,5 +14,7 @@ jobs:
       run: echo "The time was ${{ steps.hello.outputs.time }}"
     # - name: Broken Link Check
     #   uses: technote-space/broken-link-checker-action@v1
+    - name: Run Gosec Security Scanner
+      uses: securego/gosec@master
 
 
